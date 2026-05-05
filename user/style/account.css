@@ -1,0 +1,1465 @@
+.title {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-wrapper {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.line, .line-2 {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.account {
+    background-color: rgba(255, 255, 255, 1.0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.account .div {
+    background-color: rgba(255, 255, 255, 1.0);
+    overflow: visible;
+    background: linear-gradient(270deg,
+            #2c5e4f 0%,
+            rgba(0, 0, 0, 1) 50%,
+            #2c5e4f 100%);
+    width: 100%;
+    min-height: 1895px;
+    position: relative;
+}
+
+.account .overlap {
+    position: absolute;
+    width: 100%;
+    height: 527px;
+    top: 0;
+    left: 0;
+}
+
+.account .overlap-group {
+    position: absolute;
+    width: 100%;
+    height: 527px;
+    top: 0;
+    left: 0;
+}
+
+.account .rectangle {
+    position: absolute;
+    width: 100%;
+    height: 413px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.account .cover {
+    position: absolute;
+    width: 413px; 
+    height: 1960px; 
+    top: 150px;
+    left: 0px;
+    object-fit: cover;
+    transform: rotate(-90deg);
+    transform-origin: top left; 
+    overflow: visible; 
+}
+
+.account .picture {
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    top: 299px;
+    left: 305px;
+    background-color: #ffffff;
+    border-radius: 114px;
+}
+
+.account .profile {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 0;
+    left: 3px;
+    object-fit: cover;
+}
+
+.account .text-wrapper {
+    position: absolute;
+    width: 507px;
+    top: 382px;
+    left: 556px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.account .group {
+    position: absolute;
+    width: 124px;
+    height: 57px;
+    top: 27px;
+    left: 45px;
+}
+
+.account .back-btn {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 57px;
+    background-color: #000000d6;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.account .back-btn .back {
+    color: white;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 24px;
+    user-select: none;
+}
+
+.account .back-btn:hover {
+    transform: scale(1.05);
+    animation: pulse-back 2s infinite;
+}
+
+@keyframes pulse-back {
+    0%, 100% {
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 1);
+    }
+}
+
+.account .back {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .setting {
+    position: fixed !important;
+    top: 18px !important;
+    right: 18px !important;
+    left: auto !important;
+    z-index: 10010 !important;
+    width: 62px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 100%;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.account .setting:hover {
+    transform: rotate(180deg) scale(1.2); 
+}
+
+.settings-dropdown {
+    position: fixed !important;
+    top: 18px !important;
+    right: 18px !important;
+    z-index: 10010 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.settings-dropdown .setting {
+    cursor: pointer;
+    z-index: 10011;
+}
+.settings-dropdown .overlap-wrapper {
+    position: absolute !important;
+    top: calc(100% + 60px) !important;
+    right: 0 !important;
+    left: auto !important;
+    margin: 0 !important;
+    z-index: 10010 !important;
+}
+.overlap-wrapper {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    background: #fff !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18) !important;
+    border-radius: 16px 16px 20px 20px !important;
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.4s cubic-bezier(0.4,0,0.2,1);
+    width: 220px !important;
+    overflow: hidden !important;
+    z-index: 10010 !important;
+}
+.overlap-wrapper.active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    max-height: 400px !important;
+    background: #fff !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18) !important;
+}
+.overlap-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    right: 32px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    z-index: 10021;
+}
+.menu-item {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 8px 0 !important;
+    font-family: "Arial Rounded MT Bold", sans-serif !important;
+    font-size: 18px !important;
+    color: #222 !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 12px 18px !important;
+    text-align: left !important;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.menu-item:hover, .menu-item:focus {
+    background: #59b8a0 !important;
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(89,184,160,0.10);
+    outline: none;
+    border-radius: 0 !important;
+}
+.menu-item:last-child {
+    margin-bottom: 0 !important;
+}
+.menu-item.logout:hover, .menu-item.logout:focus {
+    background: #e74184 !important;
+    color: #fff !important;
+}
+
+.account .overlap-3 {
+    position: absolute;
+    top: 462px;
+    left: 533px;
+}
+
+.account .element-points {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    /* border: 1px dashed red; */
+}
+
+.account .span {
+    color: #ffffff;
+}
+
+.account .text-wrapper-5 {
+    color: #59b8a0;
+    margin-left: 6px;
+}
+
+.account .div-wrapper {
+    position: absolute;
+    width: 104px;
+    height: 42px;
+    top: 466px;
+    left: 704px;
+}
+
+.account .overlap-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 102px;
+    height: 42px;
+    background-color: #59b8a0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white; 
+    transition: transform 0.3s ease; 
+}
+
+.account .overlap-4:hover {
+    transform: scale(1.1); 
+}
+
+.account .text-wrapper-6 {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-5 {
+    position: absolute;
+    width: 891px;
+    height: 58px;
+    top: 712px;
+    left: 267px;
+}
+
+.account .text-wrapper-7 {
+    position: absolute;
+    width: 507px;
+    top: 0;
+    left: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.account .p {
+    position: absolute;
+    width: 596px;
+    top: 19px;
+    left: 295px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .line {
+    top: 783px;
+    left: 263px;
+    position: absolute;
+    width: 1363px;
+    height: 1px;
+    object-fit: cover;
+}
+
+.account .text-wrapper-8 {
+    position: absolute;
+    width: 507px;
+    top: 1065px;
+    left: 254px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.account .img {
+    top: 1136px;
+    left: 250px;
+    position: absolute;
+    width: 1363px;
+    height: 1px;
+    object-fit: cover;
+}
+
+.account .overlap-6 {
+    position: absolute;
+    width: 308px;
+    height: 186px;
+    top: 812px;
+    left: 279px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #59b8a0;
+}
+
+.account .text-wrapper-9 {
+    top: 22px;
+    left: 19px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-10 {
+    top: 75px;
+    left: 26px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-7 {
+    position: absolute;
+    width: 151px;
+    height: 32px;
+    top: 127px;
+    left: 79px;
+    background-color: #cd7800;
+    border-radius: 30px;
+}
+
+.account .text-wrapper-11 {
+    position: absolute;
+    width: 122px;
+    top: 0;
+    left: 14px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-8 {
+    position: absolute;
+    width: 308px;
+    height: 186px;
+    top: 812px;
+    left: 626px;
+    border-radius: 30px;
+}
+
+.account .ellipse {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 140px;
+    left: 213px;
+    background-color: #00ff37;
+    border-radius: 10px;
+}
+
+.account .rectangle-2 {
+    position: absolute;
+    width: 308px;
+    height: 186px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #59b8a0;
+}
+
+.account .text-wrapper-12 {
+    top: 25px;
+    left: 37px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-13 {
+    top: 78px;
+    left: 37px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .rectangle-3 {
+    position: absolute;
+    width: 151px;
+    height: 32px;
+    top: 135px;
+    left: 73px;
+    background-color: #00bb0c;
+    border-radius: 30px;
+}
+
+.account .text-wrapper-14 {
+    position: absolute;
+    width: 122px;
+    top: 135px;
+    left: 90px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-9 {
+    position: absolute;
+    width: 308px;
+    height: 186px;
+    top: 812px;
+    left: 1320px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #59b8a0;
+}
+
+.account .text-wrapper-15 {
+    top: 22px;
+    left: 20px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-16 {
+    position: absolute;
+    top: 75px;
+    left: 34px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-10 {
+    position: absolute;
+    width: 151px;
+    height: 33px;
+    top: 131px;
+    left: 75px;
+}
+
+.account .rectangle-4 {
+    position: absolute;
+    width: 151px;
+    height: 32px;
+    top: 1px;
+    left: 0;
+    background-color: #b5b5b5;
+    border-radius: 30px;
+}
+
+.account .text-wrapper-17 {
+    width: 136px;
+    top: 0;
+    left: 11px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-11 {
+    position: absolute;
+    width: 308px;
+    height: 186px;
+    top: 812px;
+    left: 973px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #59b8a0;
+}
+
+.account .text-wrapper-18 {
+    top: 22px;
+    left: 27px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .overlap-12 {
+    position: absolute;
+    width: 151px;
+    height: 32px;
+    top: 135px;
+    left: 79px;
+    background-color: #c90000;
+    border-radius: 30px;
+}
+
+.account .group-2 {
+    position: absolute;
+    width: 308px;
+    height: 180px;
+    top: 1208px;
+    left: 282px;
+}
+
+.account .overlap-13 {
+    position: relative;
+    height: 186px;
+    top: -3px;
+    left: -3px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #59b8a0;
+}
+
+.account .group-3 {
+    position: absolute;
+    width: 104px;
+    height: 42px;
+    top: 128px;
+    left: 100px;
+}
+
+.account .overlap-group-2 {
+    width: 102px;
+    height: 42px;
+    background-color: #e74184;
+    position: relative;
+    border-radius: 50px;
+}
+
+.account .text-wrapper-19 {
+    position: absolute;
+    top: 9px;
+    left: 28px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-20 {
+    top: 24px;
+    left: 26px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-21 {
+    position: absolute;
+    top: 24px;
+    left: 179px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-22 {
+    position: absolute;
+    top: 76px;
+    left: 54px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .group-4 {
+    position: absolute;
+    width: 308px;
+    height: 180px;
+    top: 1208px;
+    left: 629px;
+}
+
+.account .text-wrapper-23 {
+    position: absolute;
+    top: 76px;
+    left: 43px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-24 {
+    left: 180px;
+    position: absolute;
+    top: 24px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .group-5 {
+    position: absolute;
+    width: 308px;
+    height: 180px;
+    top: 1208px;
+    left: 976px;
+}
+
+.account .group-6 {
+    position: absolute;
+    width: 104px;
+    height: 42px;
+    top: 128px;
+    left: 98px;
+}
+
+.account .text-wrapper-25 {
+    position: absolute;
+    top: 76px;
+    left: 83px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-26 {
+    left: 186px;
+    position: absolute;
+    top: 24px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .group-7 {
+    position: absolute;
+    width: 308px;
+    height: 180px;
+    top: 1208px;
+    left: 1324px;
+}
+
+.account .group-8 {
+    position: absolute;
+    width: 104px;
+    height: 42px;
+    top: 128px;
+    left: 99px;
+}
+
+.account .text-wrapper-27 {
+    left: 188px;
+    position: absolute;
+    top: 24px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-28 {
+    width: 507px;
+    top: 1431px;
+    left: 258px;
+    font-size: 36px;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.account .line-2 {
+    top: 1502px;
+    left: 254px;
+    position: absolute;
+    width: 1363px;
+    height: 1px;
+    object-fit: cover;
+}
+
+.account .group-9 {
+    position: absolute;
+    width: 308px;
+    height: 180px;
+    top: 1574px;
+    left: 286px;
+}
+
+.account .overlap-group-3 {
+    width: 102px;
+    height: 42px;
+    background-color: #4170e7;
+    position: relative;
+    border-radius: 50px;
+}
+
+.account .text-wrapper-29 {
+    position: absolute;
+    top: 9px;
+    left: 34px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-30 {
+    position: absolute;
+    top: 76px;
+    left: 87px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #59b8a0;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.account .text-wrapper-31 {
+    position: absolute;
+    width: 507px;
+    top: 382px;
+    left: 556px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Modal Styles */
+.modal {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10001;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #59b8a0;
+    margin: 0;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    z-index: 10001;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(89, 184, 160, 0.1);
+    border-radius: 10px;
+}
+
+.modal-info-label {
+    color: #59b8a0;
+    font-weight: bold;
+}
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #59b8a0;
+}
+
+.modal-status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    z-index: 10001;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Ensure modal is above all other content */
+.account .div {
+    position: relative;
+    z-index: 1;
+}
+
+.sections-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 600px;
+    padding: 0 20px 100px 20px;
+    width: 100%;
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 600px);
+    box-sizing: border-box;
+}
+
+.modal.show {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal.show .modal-content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Payment Modal Redesign */
+#paymentModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+#paymentModal.show {
+    display: flex;
+}
+#paymentModal .modal-content {
+    background: #18322b;
+    border-radius: 20px;
+    padding: 32px 32px 24px 32px;
+    width: 100%;
+    max-width: 900px !important;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    font-family: 'Arial Rounded MT Bold', 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+#paymentModal .close-modal {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+#paymentModal h2 {
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+#paymentModal form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#paymentModal form > div {
+    margin-bottom: 18px;
+    width: 100%;
+}
+#paymentModal label {
+    color: #b5f5e0;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    display: block;
+}
+#paymentModal input[type="text"] {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #18322b;
+    font-size: 15px;
+    margin-top: 4px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    box-sizing: border-box;
+    display: block;
+}
+#paymentModal .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 10px;
+}
+#paymentModal .cancel-btn {
+    background: #888;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#paymentModal .cancel-btn:hover {
+    background: #666;
+}
+#paymentModal .save-btn {
+    background: #e94e8a;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#paymentModal .save-btn:hover {
+    background: #c13c6e;
+}
+
+#paymentModal .modal-content {
+    max-width: 900px !important;
+}
+
+.status-pending { background: #cd7800; }
+.status-accepted { background: #00bb0c; }
+.status-completed { background: #b5b5b5; }
+.status-rejected { background: #c90000; }
+.status-expired { background: #800000 !important; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section .card {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 3px solid #59b8a0;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    width: 280px;
+    height: 180px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.section-content {
+    overflow: visible;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: none;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section.collapsed .section-content {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    overflow: hidden;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.section-title h2 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.search-container.expanded {
+    width: 300px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.search-container.expanded .search-icon {
+    opacity: 0.7;
+}
+
+.search-input {
+    width: calc(100% - 28px);
+    height: 28px;
+    padding: 4px 8px 4px 32px;
+    border: 2px solid #59b8a0;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 28px;
+    transform: translateX(-100%);
+}
+
+.search-container.expanded .search-input {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3ecf8e;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(89, 184, 160, 0.3);
+}
+
+/* Update the section title arrow position */
+.section-title::after {
+    content: '▼';
+    font-size: 16px;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.section.collapsed .section-title::after {
+    transform: rotate(-90deg);
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Update section styles to handle search animation */
+.section {
+    margin: 60px 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.section-title h2 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.section-content {
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.section:not(.collapsed) .section-content {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add animation for search when section expands */
+.section:not(.collapsed) .search-container {
+    width: 300px;
+}
+
+.section:not(.collapsed) .search-input {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1280px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 280px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card-grid {
+        grid-template-columns: 280px;
+    }
+}
+
+.point-inline {
+    height: 24px !important;
+    width: auto !important;
+    vertical-align: middle !important;
+    margin-right: 10px !important;
+    object-fit: contain !important;
+    display: inline-block !important;
+    font-size: inherit !important;
+}
+
+@media screen and (max-width: 768px) {
+    .account .setting {
+        position: fixed !important;
+        top: 18px !important;
+        right: 18px !important;
+        left: auto !important;
+        width: 44px !important;
+        height: 44px !important;
+        z-index: 10010 !important;
+        display: block !important;
+        background: #18322b !important;
+        border: 2px solid #59b8a0 !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        padding: 6px;
+        object-fit: cover;
+    }
+    .overlap-wrapper {
+        position: fixed !important;
+        top: 70px !important;
+        right: 10px !important;
+        left: auto !important;
+        max-width: 90vw !important;
+        width: 200px !important;
+        background: #18322b !important;
+        border-radius: 18px !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18) !important;
+        z-index: 10009 !important;
+        padding: 0 0 10px 0 !important;
+    }
+    .overlap-wrapper .overlap-2 {
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0 !important;
+    }
+    .menu-item {
+        font-size: 18px !important;
+        padding: 12px 10px !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid #222e2a !important;
+        color: #fff !important;
+        background: none !important;
+    }
+    .menu-item:last-child {
+        border-bottom: none !important;
+    }
+}
+
+/* Remove left: 1756px for .account .setting on all screens */
+.account .setting {
+    left: auto !important;
+}

@@ -1,0 +1,1176 @@
+.edit {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.edit .backbutton {
+    position: absolute;
+    width: 124px;
+    height: 57px;
+    top: 27px;
+    left: 45px;
+}
+
+.edit .back-btn {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 57px;
+    background-color: #ffffffd6;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.edit .back-btn .back {
+    color: rgb(0, 0, 0);
+    font-family: "Arial Rounded MT Bold", Helvetica;
+    font-size: 24px;
+    user-select: none;
+}
+
+.edit .back-btn:hover {
+    transform: scale(1.05);
+    animation: pulse-back 2s infinite;
+}
+
+@keyframes pulse-back {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 1);
+    }
+}
+
+
+.edit .back {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.edit .div {
+    background-color: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 75% 50%,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 1) 100%);
+    background-image: url(../assets/edit/bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 1920px;
+    height: 1163px;
+    position: relative;
+}
+
+.edit .edit-profile {
+    position: absolute;
+    width: 507px;
+    top: 92px;
+    left: 707px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.edit .text-wrapper {
+    color: #ffffff;
+}
+
+.edit .span {
+    color: #59b8a0;
+}
+
+.edit .overlap {
+    position: absolute;
+    width: 1284px;
+    height: 1002px;
+    top: 235px;
+    left: 318px;
+}
+
+.edit .rectangle {
+    position: absolute;
+    width: 1284px;
+    height: 890px;
+    top: 112px;
+    left: 0;
+    background-color: #122923f7;
+    border-radius: 50px;
+}
+
+.edit .group {
+    position: absolute;
+    width: 248px;
+    height: 228px;
+    top: 0;
+    left: 244px;
+}
+
+.edit .profile-edit {
+    position: relative;
+    height: 228px;
+}
+
+.edit .account {
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.edit .profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.edit .editimg {
+    position: absolute;
+    width: 44px;
+    height: 42px;
+    top: 9px;
+    left: 13px;
+    object-fit: cover;
+}
+
+.edit .edit-wrapper {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 147px;
+    left: 183px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.edit-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.edit-wrapper .editimg {
+    width: 44px;
+    height: 42px;
+    object-fit: cover;
+}
+
+
+.edit .editimg,
+.edit .img-wrapper,
+.edit .group-6,
+.edit .group-10,
+.edit .group-12,
+.edit .group-14 {
+    transition: filter 0.3s ease; 
+    cursor: pointer; 
+}
+
+
+.edit .editimg:hover,
+.edit .img-wrapper:hover,
+.edit .group-6:hover,
+.edit .group-10:hover,
+.edit .group-12:hover,
+.edit .group-14:hover {
+    filter: brightness(1.3);
+}
+
+.edit .name-edit {
+    position: absolute;
+    width: 565px;
+    height: 65px;
+    top: 82px;
+    left: 495px;
+}
+
+.edit .overlap-2 {
+    position: relative;
+    width: 563px;
+    height: 65px;
+}
+
+.edit .img-wrapper {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 0;
+    left: 498px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+}
+
+.edit .text-wrapper-2 {
+    position: absolute;
+    width: 507px;
+    top: 1px;
+    left: 0;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.name-input {
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 500px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+.name-input {
+    display: none;
+}
+
+.edit .save-button {
+    position: absolute;
+    width: 143px;
+    height: 58px;
+    top: 802px;
+    left: 728px;
+    transition: all 0.3s ease;
+    cursor: pointer; 
+}
+
+.edit .div-wrapper {
+    position: relative;
+    width: 141px;
+    height: 58px;
+    background-color: #e74184;
+    border-radius: 50px;
+    transition: all 0.3s ease; 
+}
+
+.edit .text-wrapper-3 {
+    position: absolute;
+    width: 65px;
+    top: 12px;
+    left: 42px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.edit .save-button:hover .div-wrapper {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px #e74184; 
+}
+
+.edit .cancel-button {
+    position: absolute;
+    width: 143px;
+    height: 58px;
+    top: 802px;
+    left: 442px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.edit .overlap-3 {
+    position: relative;
+    width: 141px;
+    height: 58px;
+    background-color: #757575;
+    border-radius: 50px;
+    transition: background-color 0.3s ease; 
+}
+
+.edit .text-wrapper-4 {
+    position: absolute;
+    width: 88px;
+    top: 12px;
+    left: 32px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.edit .cancel-button:hover {
+    transform: scale(1.05); 
+}
+
+.edit .cancel-button:hover .overlap-3 {
+    background-color: #8a8a8a;
+}
+
+.edit .email-edit {
+    position: absolute;
+    width: 530px;
+    height: 119px;
+    top: 286px;
+    left: 404px;
+}
+
+.edit .overlap-4 {
+    position: relative;
+    height: 119px;
+}
+
+.edit .group-4 {
+    position: absolute;
+    width: 496px;
+    height: 87px;
+    top: 0;
+    left: 0;
+}
+
+.edit .text-wrapper-5 {
+    top: 0;
+    left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.edit .group-5 {
+    position: absolute;
+    width: 496px;
+    height: 52px;
+    top: 35px;
+    left: 0;
+}
+
+.edit .overlap-group-2 {
+    position: relative;
+    width: 494px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+
+.edit .text-wrapper-6 {
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    color: #000000;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    display: block;
+}
+
+.email-input {
+    position: absolute;
+    top: 12px; 
+    left: 28px;
+    width: 85%; 
+    height: 28px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    outline: none;
+    display: none;
+}
+
+.edit .group-6 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 54px;
+    left: 465px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+}
+
+.edit .password-edit {
+    position: absolute;
+    width: 530px;
+    height: 103px;
+    top: 411px;
+    left: 404px;
+}
+
+.edit .overlap-5 {
+    position: relative;
+    height: 103px;
+}
+
+.edit .group-8 {
+    position: absolute;
+    width: 496px;
+    height: 84px;
+    top: 0;
+    left: 0;
+}
+
+.edit .group-9 {
+    position: absolute;
+    width: 496px;
+    height: 52px;
+    top: 32px;
+    left: 0;
+}
+
+.edit .text-wrapper-7 {
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    width: 100px; 
+    border: none;
+    background: transparent;
+    color: #000000;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    display: block;
+    pointer-events: none; 
+}
+
+.dob-input {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    width: 85%;
+    height: 28px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    outline: none;
+    display: none;
+    cursor: pointer;
+}
+
+.phone-input {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    width: 420px;
+    height: 28px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-size: 16px;
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none; 
+}
+
+.edit .group-10 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 38px;
+    left: 465px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+}
+
+.edit .dob-edit {
+    position: absolute;
+    width: 533px;
+    height: 97px;
+    top: 535px;
+    left: 404px;
+}
+
+.edit .overlap-6 {
+    position: relative;
+    height: 97px;
+}
+
+.edit .text-wrapper-8 {
+    position: absolute;
+    width: 134px;
+    top: 0;
+    left: 10px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.edit .group-12 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 32px;
+    left: 468px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+}
+
+.edit .phoneno-edit {
+    position: absolute;
+    width: 530px;
+    height: 102px;
+    top: 659px;
+    left: 404px;
+}
+
+.edit .overlap-7 {
+    position: relative;
+    height: 102px;
+}
+
+.edit .text-wrapper-9 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.edit .group-14 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 37px;
+    left: 465px;
+    background-color: #000000c7;
+    border-radius: 32.5px;
+}
+
+.edit .upload-text {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 40px;
+}
+
+.edit .upload-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.edit .upload {
+    width: 120px;
+    height: 120px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.edit .upload:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.prof-pop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.prof-pop.active {
+    display: flex;
+    opacity: 1;
+}
+
+.edit .prof-pop1 {
+    position: relative;
+    width: 450px;
+    padding: 40px;
+    background-color: #172e28;
+    border-radius: 20px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.prof-pop.active .prof-pop1 {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.edit .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+}
+
+.edit .close1 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.edit .close1:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.edit .pw-text {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.password-popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cp1, .cp2 {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input-label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: block;
+    font-family: "Arial", sans-serif;
+}
+
+.password-input {
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.close1 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.close1:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+}
+
+.confirm-button {
+    width: 120px;
+    height: 40px;
+    margin: 50px auto 0;
+    background: #e74184;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.confirm-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(231, 65, 132, 0.3);
+}
+
+.password-alert {
+    color: #ff4444;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    min-height: 20px;
+    font-family: "Arial", sans-serif;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.password-alert:not(:empty) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.success-alert {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; 
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-size: 18px;
+    display: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.edit .close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 270px;
+    left: 1270px;
+    z-index: 9999;
+    cursor: pointer;
+    border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.edit .close:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 15px 5px white; 
+}
+
+.upload-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-popup.active {
+    display: flex;
+}
+
+.upload-popup-content {
+    background-color: #172e28;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.upload-popup .upload-text {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.upload-popup .upload-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.upload-popup .upload {
+    width: 80px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.upload-popup .upload:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.upload-popup .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.upload-popup .close1 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.upload-popup .close1:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.image-upload-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-upload-popup.active {
+    display: flex;
+    opacity: 1;
+}
+
+.image-upload-content {
+    background-color: #172e28;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-upload-popup.active .image-upload-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.upload-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.image-upload-popup .upload-text {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 60px;
+    line-height: 1.3;
+}
+
+.image-upload-popup .upload-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.image-upload-popup .upload {
+    width: 160px;
+    height: 160px;
+    filter: brightness(0) invert(1);
+}
+
+.image-upload-popup .upload-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.image-upload-popup .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.image-upload-popup .close1 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.image-upload-popup .close1:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.file-size-limit {
+    color: #999999;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin-top: 20px;
+}
+
+.remove-profile-wrapper {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 147px;
+    left: 0;
+    background-color: #ff0000;
+    border-radius: 32.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.remove-profile-wrapper:hover {
+    transform: scale(1.1);
+    background-color: #ff4d4d;
+}
+
+.removeimg {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+}
+
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-popup.active {
+    display: flex;
+}
+
+.confirmation-content {
+    background-color: #172e28;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-popup.active .confirmation-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.confirmation-text {
+    color: white;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirm-yes, .confirm-no {
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.confirm-yes {
+    background-color: #ff0000;
+    color: white;
+}
+
+.confirm-no {
+    background-color: #757575;
+    color: white;
+}
+
+.confirm-yes:hover, .confirm-no:hover {
+    transform: scale(1.05);
+}
+
+.confirm-yes:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.confirm-no:hover {
+    box-shadow: 0 0 15px rgba(117, 117, 117, 0.5);
+}
+
+/* Notification Pills */
+.notification-pill {
+    position: fixed;
+    top: -100px; /* Start above the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica, Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notification-pill.show {
+    top: 20px; /* Slide down to this position */
+}
+
+.success-pill {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error-pill {
+    background-color: #ff4444;
+    color: white;
+}
+
+@keyframes slideInOut {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+    15% {
+        top: 20px;
+        opacity: 1;
+    }
+    85% {
+        top: 20px;
+        opacity: 1;
+    }
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+.notification-pill.animate {
+    animation: slideInOut 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.info-pill {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Update profile image styles for pending state */
+.profile.pending-removal {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
